@@ -1,5 +1,5 @@
-// const {isEven } = require('./module/isEven.js')
+const {isEven } = require('./module/isEven.js')
 
-// const testnum = 4;
+const testnum = 4;
 
-// console.log(isEven(testnum));
+console.log(isEven(testnum));
