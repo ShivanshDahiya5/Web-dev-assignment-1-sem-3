@@ -6,12 +6,12 @@ if(operation === 'add'){
     console.log(n1 + n2);
 }else if(operation === 'sub'){
     console.log(n1 - n2);
-// }else if(operation === 'multi'){
-//     console.log(n1 * n2);
-// }else if(operation === 'div'){
-//     if(n2 === 0){
-//         console.log("Invalid Number");
-//     }else{
-//         console.log(n1 / n2);
-//     }
-// }
+}else if(operation === 'multi'){
+    console.log(n1 * n2);
+}else if(operation === 'div'){
+    if(n2 === 0){
+        console.log("Invalid Number");
+    }else{
+        console.log(n1 / n2);
+    }
+}
