@@ -1,12 +1,12 @@
-// const fs = require('fs')
-// const filename = 'utility.txt'
+const fs = require('fs')
+const filename = 'utility.txt'
 
-// fs.writeFile(filename, 'Data Created.\n', (err)=>{
-//     if(err){
-//         console.log("Error in file creating", err);
-//         return;
-//     }
-//     console.log("File Created Successfully.");
+fs.writeFile(filename, 'Data Created.\n', (err)=>{
+    if(err){
+        console.log("Error in file creating", err);
+        return;
+    }
+    console.log("File Created Successfully.");
 
 //     fs.readFile(filename, 'utf8', (err, data)=>{
 //         if(err){
