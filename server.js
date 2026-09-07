@@ -1,9 +1,9 @@
-// const http = require('http')
+const http = require('http')
 
-// const server = http.createServer((req, res)=>{
-//     if(req.url == '/' && req.method === 'GET'){
-//         res.writeHead(200, {'Content-Type': 'text/plain'});
-//         res.end('Welcome to Backend');
+const server = http.createServer((req, res)=>{
+    if(req.url == '/' && req.method === 'GET'){
+        res.writeHead(200, {'Content-Type': 'text/plain'});
+        res.end('Welcome to Backend');
 //     }else if(req.url == '/about' && req.method ==='GET'){
 //         res.writeHead(200, {'Content': 'text/plain'});
 //         res.end('Welcome to About Page');
