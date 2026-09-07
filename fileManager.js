@@ -17,18 +17,18 @@ fs.writeFile(filename, 'Data Created.\n', (err)=>{
 
         fs.appendFile(filename, 'New Log Entry.\n', (err)=>{
             if(err){
-//                 console.log("Error in appending file", err);
-//                 return;
-//             }
-//             console.log("File Updated Successfully");
+                console.log("Error in appending file", err);
+                return;
+            }
+            console.log("File Updated Successfully");
 
-//             fs.unlink(filename, (err)=>{
-//                 if(err){
-//                     console.log("Error in deleting file", err);
-//                     return;
-//                 }
-//                 console.log("File Deleted Successfully");
-//             });
-//         });
-//     });
-// });
+            fs.unlink(filename, (err)=>{
+                if(err){
+                    console.log("Error in deleting file", err);
+                    return;
+                }
+                console.log("File Deleted Successfully");
+            });
+        });
+    });
+});
