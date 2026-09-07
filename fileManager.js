@@ -8,15 +8,15 @@ fs.writeFile(filename, 'Data Created.\n', (err)=>{
     }
     console.log("File Created Successfully.");
 
-//     fs.readFile(filename, 'utf8', (err, data)=>{
-//         if(err){
-//             console.log("Error in reading file:", err);
-//             return;
-//         }
-//         console.log("File Content: "+ data);
+    fs.readFile(filename, 'utf8', (err, data)=>{
+        if(err){
+            console.log("Error in reading file:", err);
+            return;
+        }
+        console.log("File Content: "+ data);
 
-//         fs.appendFile(filename, 'New Log Entry.\n', (err)=>{
-//             if(err){
+        fs.appendFile(filename, 'New Log Entry.\n', (err)=>{
+            if(err){
 //                 console.log("Error in appending file", err);
 //                 return;
 //             }
