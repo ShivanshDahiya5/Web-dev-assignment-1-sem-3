@@ -15,7 +15,7 @@ const server = http.createServer((req, res)=>{
     }
 })
 
-// const port = 3000
-// server.listen(port, ()=>{
-//     console.log("Port has been started at http://localhost:3000/")
-// })
+const port = 3000
+server.listen(port, ()=>{
+    console.log("Port has been started at http://localhost:3000/")
+})
